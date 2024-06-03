@@ -13,9 +13,10 @@ router.get("/tmt/:text",verifytoken,async (req,res)=>{
         }
      else
      {
-        console.log(data);
+        //console.log(data);
         res.status(200).json({url:data.url});
      }   
 });
+console.log("hello");
 
 module.exports=router;
